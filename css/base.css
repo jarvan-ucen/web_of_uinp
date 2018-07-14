@@ -1,0 +1,267 @@
+@media only screen and (min-width: 1170px) {
+  /*第一个模块 导航条*/
+  header #logo img{
+    width: 45px;
+    height: 45px;
+  }
+  header #cd-cart-trigger .flag1{
+    display: block;
+  }
+  header #cd-cart-trigger .flag2{
+    display: none;
+  }
+  header #cd-cart-trigger{
+    margin-right: 50px;
+  }
+  header span{
+    color: #91919d;
+    font-size: 12px;
+    line-height: 80px;
+  }
+  header img{
+    margin-left: 10px;
+  }
+
+  /*第二个模块*/
+  .two .title1{
+    display: block;
+    font-family: Lato;
+    font-size: 50px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: 1.4px;
+    text-align: center;
+    color: #e1335d;
+    margin-top:90px;
+    margin-bottom: 18px;
+  }
+  .two .title2{
+    display: none;
+  }
+  .little-title{
+    margin-bottom: 60px;
+  }
+
+  /*第三个模块*/
+  .three .title1{
+    padding-top:60px ;
+    padding-bottom: 16px;
+  }
+  .three .title1 .why{
+    color: #A6237D;
+  }
+  .three .line1{
+    background:#A6237D;
+}
+  .three .line1{
+    margin-bottom: 60px;
+  }
+  .lunbo1{
+    display: block;
+  }
+  .lunbo1 .card{
+    height: 330px;
+  }
+  .lunbo1{
+    margin-bottom:100px;
+  }
+  .lunbo2{
+    display: none;
+  }
+}
+@media only screen and (max-width: 1170px) {
+  /*第一个模块 导航条*/
+  header #logo img{
+    width: 50px;
+    height: 50px;
+  }
+  header #cd-cart-trigger .flag1{
+    display: none;
+  }
+  header #cd-cart-trigger .flag2{
+    display: block;
+  }
+
+  header #cd-cart-trigger{
+    margin-right: 30px;
+  }
+  header .flag2{
+    color: #91919d;
+    font-size: 12px;
+    line-height: 80px;
+  }
+  header img{
+    margin-right: 10px;
+  }
+  /*第二个模块*/
+  .two .title1{
+    display: none;
+  }
+  .two .title2{
+    display: block;
+    font-family: Lato;
+    font-size: 50px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: 1.4px;
+    text-align: center;
+    color: #e1335d;
+    margin-top: 30px;
+    margin-bottom:22px ;
+  }
+  .little-title{
+    margin-bottom: 50px;
+  }
+
+  /*第三个模块*/
+  .three .title1{
+    padding-top:70px ;
+    padding-bottom: 32px;
+  }
+  .three .title1 .why{
+    color: #e1335d;
+  }
+  .three .line1{
+    background:#e1335d;
+  }
+  .three .line1{
+    margin-bottom: 50px;
+  }
+  .lunbo1{
+    display: none;
+  }
+  .lunbo2{
+    display: block;
+  }
+  .lunbo2 .card{
+    height: 330px;
+  }
+}
+
+/*第二个模块*/
+.little-title{
+  font-family: Lato;
+  font-size: 24px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.33;
+  letter-spacing: normal;
+  text-align: center;
+  color: #050512;
+}
+.two .svg{
+  width: 20px !important;
+  height: 20px !important;
+}
+.two .line{
+  height: 2px;
+  background:#91919b;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+.two .text{
+  font-family: Lato;
+  font-size: 15px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.4;
+  letter-spacing: normal;
+  color: #91919b;
+}
+.two .button{
+  /*width: 328px;*/
+  height: 52px;
+  border-radius: 30px;
+  border: 0px;
+  clear: both;
+
+  font-family: Lato;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 52px;
+  letter-spacing: 2.3px;
+  text-align: center;
+  color: #ffffff;
+
+  /*渐变*/
+  background: -webkit-linear-gradient(left, #0084fe , #00afe6); /* Safari 5.1 - 6.0 */
+  background: -o-linear-gradient(right, #0084fe , #00afe6); /* Opera 11.1 - 12.0 */
+  background: -moz-linear-gradient(right, #0084fe , #00afe6); /* Firefox 3.6 - 15 */
+  background: linear-gradient(to right, #0084fe , #00afe6);
+  margin-top: 30px;
+  margin-bottom: 120px;
+}
+
+
+/*第三个模块*/
+.three .title1{
+  font-family: Lato;
+  font-size: 32px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: 1.2px;
+  text-align: center;
+  color: #050512;
+  /*margin-top: 50px;*/
+}
+.three .line1{
+  height: 2px;
+  clear: both;
+  width: 110px;
+}
+/*轮播*/
+.card{
+  border: 1px #DFE8ED solid;
+  margin: 3px;
+  box-shadow:0px 0px  10px 1px #DFE8ED;
+  border-radius: 10px;
+}
+.lunbo1 .svg,.lunbo2 .svg{
+  line-height: 100px
+}
+.lunbo1 .title,.lunbo2 .title{
+  font-family: Lato;
+  font-size: 32px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: 1.2px;
+  text-align: center;
+  color: #050512;
+}
+.lunbo1 .line,.lunbo2 .line{
+  height: 3px;
+  background:#d33c71;
+  clear: both;
+  width: 100px;
+}
+.lunbo1 .des,.lunbo2 .des{
+  font-family: Lato;
+  font-size: 15px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.4;
+  letter-spacing: normal;
+  color: #91919b;
+  display: block;
+  margin-left: 9px;
+  margin-right: 9px;
+  margin-top: 15px;
+}
+
+.lunbo2 .item,.lunbo2 .card{
+  max-width: 315px !important;
+  /*min-width: 315px !important;*/
+}

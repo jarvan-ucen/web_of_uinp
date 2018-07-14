@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="60px" height="56px" viewBox="0 0 60 56" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>Icons / Connect</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="60.8065421%" y1="46.5758813%" x2="-25.5684325%" y2="131.787502%" id="linearGradient-1">
+            <stop stop-color="#E1335D" offset="0%"></stop>
+            <stop stop-color="#B82A7D" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Icons-/-Connect" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="连接_connecting5" transform="translate(3.000000, 1.000000)" fill="url(#linearGradient-1)" fill-rule="nonzero">
+            <g id="Group">
+                <polygon id="Shape" points="55 2.77013368 52.2316421 0 37.8263989 14.4082165 34.47111 11.0551027 25 20.5275514 34.47111 30 43.9441763 20.5275514 40.5908439 17.1724813"></polygon>
+                <path d="M25.2732496,24 L22.4118316,26.8615987 L20.5368394,24.9864882 L11.0601048,34.4638212 L14.4147358,37.8206213 L0,52.2323526 L2.76747269,55 L17.1822085,40.5882687 L20.5368394,43.9431115 L30.0116169,34.4677358 L28.1366248,32.590668 L31,29.727112 L25.2732496,24 Z M23.7936107,28.2473797 L25.2712924,26.7696047 L28.2325273,29.7310266 L26.7548456,31.2068443 L23.7936107,28.2473797 Z" id="Shape"></path>
+            </g>
+        </g>
+    </g>
+</svg>
