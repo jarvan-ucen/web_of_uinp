@@ -1,7 +1,11 @@
 /*添加字体*/
 @font-face {
-  font-family: Lato;   /*字体名称*/
+  font-family: Lato-Light;   /*字体名称*/
   src: url('../fonts/Lato-Light.ttf');       /*字体源文件*/
+}
+@font-face {
+  font-family: Lato-Regular;   /*字体名称*/
+  src: url('../fonts/Lato-Regular.ttf');       /*字体源文件*/
 }
 @media only screen and (min-width: 1170px) {
   /*第一个模块 导航条*/
@@ -30,7 +34,7 @@
   /*第二个模块*/
   .two .title1{
     display: block;
-    font-family: Lato;
+    font-family: Lato-Regular;
     font-size: 50px;
     font-weight: normal;
     font-style: normal;
@@ -106,7 +110,7 @@
   }
   .two .title2{
     display: block;
-    font-family: Lato;
+    font-family: Lato-Regular;
     font-size: 50px;
     font-weight: normal;
     font-style: normal;
@@ -149,7 +153,7 @@
 
 /*第二个模块*/
 .little-title{
-  font-family: Lato;
+  font-family: Lato-Light;
   font-size: 24px;
   font-weight: 300;
   font-style: normal;
@@ -170,7 +174,7 @@
   margin-bottom: 30px;
 }
 .two .text{
-  font-family: Lato;
+  font-family: Lato-Regular;
   font-size: 15px;
   font-weight: normal;
   font-style: normal;
@@ -186,7 +190,7 @@
   border: 0px;
   clear: both;
 
-  font-family: Lato;
+  font-family: Lato-Regular;
   font-size: 14px;
   font-weight: normal;
   font-style: normal;
@@ -208,7 +212,7 @@
 
 /*第三个模块*/
 .three .title1{
-  font-family: Lato;
+  font-family: Lato-Light;
   font-size: 32px;
   font-weight: 300;
   font-style: normal;
@@ -235,7 +239,7 @@
   line-height: 100px
 }
 .lunbo1 .title,.lunbo2 .title{
-  font-family: Lato;
+  font-family: Lato-Regular;
   font-size: 32px;
   font-weight: 300;
   font-style: normal;
@@ -252,12 +256,12 @@
   width: 100px;
 }
 .lunbo1 .des,.lunbo2 .des{
-  font-family: Lato;
-  font-size: 15px;
+  font-family: Lato-Regular;
+  font-size: 16px;
   font-weight: normal;
   font-style: normal;
   font-stretch: normal;
-  line-height: 1.4;
+  line-height: 1.5;
   letter-spacing: normal;
   color: #91919b;
   display: block;
