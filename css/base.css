@@ -1,3 +1,8 @@
+/*添加字体*/
+@font-face {
+  font-family: Lato;   /*字体名称*/
+  src: url('../fonts/Lato-Light.ttf');       /*字体源文件*/
+}
 @media only screen and (min-width: 1170px) {
   /*第一个模块 导航条*/
   header #logo img{
@@ -262,6 +267,20 @@
 }
 
 .lunbo2 .item,.lunbo2 .card{
-  max-width: 315px !important;
+  max-width: 410px !important;
   /*min-width: 315px !important;*/
+}
+.carousel-control.left {
+
+  background-image:none;
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#80000000', endColorstr='#00000000', GradientType=1);
+}
+.carousel-control.right {
+  left: auto;
+  right: 0;
+
+  background-image: none;
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#80000000', GradientType=1);
 }
