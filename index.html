@@ -16,6 +16,14 @@
 
 	<!--响应式nav 点击出现导航条-->
 	<!--<script src="js/nav-main.js"></script> &lt;!&ndash; Gem jQuery &ndash;&gt;-->
+
+	<style>
+		.aa:focus{
+			outline: none !important;
+			border:0px;
+			/*background-color:rgba(0, 0, 0, 0) !important;*/
+		}
+	</style>
 </head>
 <body>
 <!--第一个模块 导航条-->
@@ -61,7 +69,7 @@
 				<img src="img/user.svg" class="svg">
 			</div>
 			<div class="col-lg-8 col-xs-9 text" align="left">
-				Full Name
+				<input class="aa" placeholder="Full Name" type="text" style="border: 0px;background-color:rgba(0, 0, 0, 0);text-align: left;outline:none;color:#050512">
 			</div>
 			<div class="col-sm-8 col-sm-offset-2 col-xs-12 line">
 			</div>
@@ -71,7 +79,8 @@
 				<img src="img/email.svg" class="svg">
 			</div>
 			<div class="col-lg-8 col-xs-9 text" align="left">
-				Email
+
+				<input class="aa" placeholder="Email" type="text" style="border: 0px;background-color:rgba(0, 0, 0, 0);text-align: left;outline:none;color:#050512">
 			</div>
 			<div class="col-sm-8 col-sm-offset-2 col-xs-12 line">
 			</div>
@@ -81,12 +90,13 @@
 				<img src="img/phone.svg" class="svg">
 			</div>
 			<div class="col-lg-8 col-xs-9 text" align="left">
-				Telephone Number
+
+				<input class="aa" placeholder="Telephone Number" type="text" style="border: 0px;background-color:rgba(0, 0, 0, 0);text-align: left;outline:none;color:#050512">
 			</div>
 			<div class="col-sm-8 col-sm-offset-2 col-xs-12 line">
 			</div>
 		</div>
-		<div class="button col-sm-8 col-sm-offset-2 col-xs-12">SUBSCRIBE</div>
+		<div class="button col-sm-8 col-sm-offset-2 col-xs-12" style="cursor: pointer">SUBSCRIBE</div>
 	</div>
 </div>
 
