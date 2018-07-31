@@ -1,290 +1,587 @@
-/*添加字体*/
 @font-face {
-  font-family: Lato-Light;   /*字体名称*/
-  src: url('../fonts/Lato-Light.ttf');       /*字体源文件*/
-}
-@font-face {
-  font-family: Lato-Regular;   /*字体名称*/
-  src: url('../fonts/Lato-Regular.ttf');       /*字体源文件*/
-}
-@media only screen and (min-width: 1170px) {
-  /*第一个模块 导航条*/
-  header #logo img{
-    width: 45px;
-    height: 45px;
-  }
-  header #cd-cart-trigger .flag1{
-    display: block;
-  }
-  header #cd-cart-trigger .flag2{
-    display: none;
-  }
-  header #cd-cart-trigger{
-    margin-right: 50px;
-  }
-  header span{
-    color: #91919d;
-    font-size: 12px;
-    line-height: 80px;
-  }
-  header img{
-    margin-left: 10px;
-  }
-
-  /*第二个模块*/
-  .two .title1{
-    display: block;
-    font-family: Lato-Regular;
-    font-size: 50px;
-    font-weight: normal;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: normal;
-    letter-spacing: 1.4px;
-    text-align: center;
-    color: #e1335d;
-    margin-top:90px;
-    margin-bottom: 18px;
-  }
-  .two .title2{
-    display: none;
-  }
-  .little-title{
-    margin-bottom: 60px;
-  }
-
-  /*第三个模块*/
-  .three .title1{
-    padding-top:60px ;
-    padding-bottom: 16px;
-  }
-  .three .title1 .why{
-    color: #A6237D;
-  }
-  .three .line1{
-    background:#A6237D;
-}
-  .three .line1{
-    margin-bottom: 60px;
-  }
-  .lunbo1{
-    display: block;
-  }
-  .lunbo1 .card{
-    height: 330px;
-  }
-  .lunbo1{
-    margin-bottom:100px;
-  }
-  .lunbo2{
-    display: none;
-  }
-}
-@media only screen and (max-width: 1170px) {
-  /*第一个模块 导航条*/
-  header #logo img{
-    width: 50px;
-    height: 50px;
-  }
-  header #cd-cart-trigger .flag1{
-    display: none;
-  }
-  header #cd-cart-trigger .flag2{
-    display: block;
-  }
-
-  header #cd-cart-trigger{
-    margin-right: 30px;
-  }
-  header .flag2{
-    color: #91919d;
-    font-size: 12px;
-    line-height: 80px;
-  }
-  header img{
-    margin-right: 10px;
-  }
-  /*第二个模块*/
-  .two .title1{
-    display: none;
-  }
-  .two .title2{
-    display: block;
-    font-family: Lato-Regular;
-    font-size: 50px;
-    font-weight: normal;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: normal;
-    letter-spacing: 1.4px;
-    text-align: center;
-    color: #e1335d;
-    margin-top: 30px;
-    margin-bottom:22px ;
-  }
-  .little-title{
-    margin-bottom: 50px;
-  }
-
-  /*第三个模块*/
-  .three .title1{
-    padding-top:70px ;
-    padding-bottom: 32px;
-  }
-  .three .title1 .why{
-    color: #e1335d;
-  }
-  .three .line1{
-    background:#e1335d;
-  }
-  .three .line1{
-    margin-bottom: 50px;
-  }
-  .lunbo1{
-    display: none;
-  }
-  .lunbo2{
-    display: block;
-  }
-  .lunbo2 .card{
-    height: 330px;
-  }
+    font-family: FuturaBT-BoldItalic;
+    src: url('../fonts/FuturaBT-BoldItalic.otf');
 }
 
-/*第二个模块*/
-.little-title{
-  font-family: Lato-Light;
-  font-size: 24px;
-  font-weight: 300;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 1.33;
-  letter-spacing: normal;
-  text-align: center;
-  color: #050512;
-}
-.two .svg{
-  width: 20px !important;
-  height: 20px !important;
-}
-.two .line{
-  height: 2px;
-  background:#91919b;
-  margin-top: 10px;
-  margin-bottom: 30px;
-}
-.two .text{
-  font-family: Lato-Regular;
-  font-size: 15px;
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 1.4;
-  letter-spacing: normal;
-  color: #91919b;
-}
-.two .button{
-  /*width: 328px;*/
-  height: 52px;
-  border-radius: 30px;
-  border: 0px;
-  clear: both;
+/*响应式 当屏幕大于992px时*/
+@media only screen and (min-width: 992px) {
+    .header{
+        background-image: url('../img/bg.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
 
-  font-family: Lato-Regular;
-  font-size: 14px;
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 52px;
-  letter-spacing: 2.3px;
-  text-align: center;
-  color: #ffffff;
+/*大小标题*/
+    .title img{
+        margin-top: 80px;
+        margin-bottom: -60px;
+        background-size: cover;
+        width: 100%;
+        height: 100%;
+    }
+    .title .little-title{
+        color: #0011BC;
+        font-size: 32px;
+        font-family: Helvetica;
+        font-weight: lighter;
+        margin-left: -30px;
+    }
 
-  /*渐变*/
-  background: -webkit-linear-gradient(left, #0084fe , #00afe6); /* Safari 5.1 - 6.0 */
-  background: -o-linear-gradient(right, #0084fe , #00afe6); /* Opera 11.1 - 12.0 */
-  background: -moz-linear-gradient(right, #0084fe , #00afe6); /* Firefox 3.6 - 15 */
-  background: linear-gradient(to right, #0084fe , #00afe6);
-  margin-top: 30px;
-  margin-bottom: 120px;
-}
+/*订阅表单*/
+    .Subscribe{
+        margin-top: 40px;
+        padding-bottom: 30px;
+    }
+    .Subscribe .col-md-3{
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .Subscribe label{
+        color: #ADADBD;
+        font-size: 14px;
+        font-family: Helvetica;
+    }
+    .Subscribe label span{
+        color: #0011BC !important;
+    }
+    .Subscribe input{
+        height: 50px;
+        width: 100%;
 
 
-/*第三个模块*/
-.three .title1{
-  font-family: Lato-Light;
-  font-size: 32px;
-  font-weight: 300;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: normal;
-  letter-spacing: 1.2px;
-  text-align: center;
-  color: #050512;
-  /*margin-top: 50px;*/
-}
-.three .line1{
-  height: 2px;
-  clear: both;
-  width: 110px;
-}
-/*轮播*/
-.card{
-  border: 1px #DFE8ED solid;
-  margin: 3px;
-  box-shadow:0px 0px  10px 1px #DFE8ED;
-  border-radius: 10px;
-}
-.lunbo1 .svg,.lunbo2 .svg{
-  line-height: 100px
-}
-.lunbo1 .title,.lunbo2 .title{
-  font-family: Lato-Regular;
-  font-size: 32px;
-  font-weight: 300;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: normal;
-  letter-spacing: 1.2px;
-  text-align: center;
-  color: #050512;
-}
-.lunbo1 .line,.lunbo2 .line{
-  height: 3px;
-  background:#d33c71;
-  clear: both;
-  width: 100px;
-}
-.lunbo1 .des,.lunbo2 .des{
-  font-family: Lato-Regular;
-  font-size: 16px;
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 1.5;
-  letter-spacing: normal;
-  color: #91919b;
-  display: block;
-  margin-left: 9px;
-  margin-right: 9px;
-  margin-top: 15px;
+        border-radius:4px;
+        outline: none;
+        background: #E5E5EF;
+        border: 0px;
+
+        color:#000000;
+        font-size: 14px;
+        font-family: Helvetica;
+        font-weight: bold;
+        padding-left: 15px;
+        z-index: 1;
+    }
+    .Subscribe .sub-button{
+        width: 100%;
+        height: 50px;
+        margin-top: 24px;
+        background:rgba(0,17, 188,1);
+        border: 0px;
+        border-radius:4px;
+
+        color: #FFFFFF;
+        font-size: 14px;
+        font-family: Helvetica;
+        font-weight: bold;
+    }
+
+    .Subscribe .error{
+        position: absolute;
+        color:red;
+    }
+
+    /*邮件发送成功*/
+    .Subscribe .success img{
+        margin-top: -20px;
+    }
+    .Subscribe .success .thank{
+        color: #0011BC;
+        font-size: 24px;
+        font-family: Helvetica;
+        font-weight: bold;
+        line-height: 50px;
+    }
+    .Subscribe .success .word,.Subscribe .fail .word{
+        color: #3F3F3F;
+        font-size: 14px;
+        font-family: Helvetica;
+        font-weight: bold;
+    }
+    /*邮件发送失败*/
+    .Subscribe .fail .thank{
+        color: #DA3A3A;
+        font-size: 24px;
+        font-family: Helvetica;
+        font-weight: bold;
+        line-height: 50px;
+    }
+    .Subscribe .fail .refresh{
+        width: 200px;
+        height: 45px;
+        background:rgba(0,17, 188,1);
+        border: 0px;
+        border-radius:4px;
+        margin-top: 15px;
+
+        color: #FFFFFF;
+        font-size: 14px;
+        font-family: Helvetica;
+        font-weight: bold;
+    }
+
+
+    /*Describe描述*/
+    .Describe{
+        padding-top: 90px;
+        float: left;
+        background: linear-gradient(#FAFAFA, #F6F6FE);
+        padding-bottom:65px;
+    }
+    .Describe .col-md-3{
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .Describe img{
+        width: 60px;
+        height: 56px;
+        cursor: pointer;
+    }
+    .Describe .des-div{
+        /*display: none;*/
+    }
+    .Describe .des-title{
+        color:#050512;
+        font-size: 24px;
+        font-family: Helvetica;
+        font-weight: lighter;
+        margin-top: 30px;
+    }
+    .Describe .line{
+        width: 60px;
+        height: 2px;
+        background: #0011BC;
+    }
+    .Describe .des{
+        color: #91919B;
+        font-size: 15px;
+        /*font-family: Helvetica;*/
+        margin-top: 17px;
+        width: 110%;
+        margin-left: -5%;
+    }
+
+    /*partners*/
+    .partners{
+        background: white;
+        padding-top: 65px;
+        padding-bottom:35px;
+    }
+    .partners .par-title{
+        color: #0011BC;
+        font-size: 40px;
+        font-family: FuturaBT-BoldItalic;
+    }
+    .partners .logo{
+        margin-top: -20px;
+    }
+    .partners .logo .col-xs-12 .col-xs-6{
+        height: 100%;
+    }
+    .partners .logo img{
+        width: 75%;
+        height: 75%;
+    }
+    .partners .logo .col-xs-12{
+        margin-top: 85px;
+    }
+
+    /*schools*/
+    .schools{
+        background: #F6F6FE;
+        padding-top: 65px;
+        padding-bottom: 65px;
+    }
+    .schools .sch-title{
+        color: #0011BC;
+        font-size: 40px;
+        font-family: FuturaBT-BoldItalic;
+    }
+    .schools .logo .nan{
+        width: 105px;
+        height: 134px
+    }
+    .schools .logo .zhe{
+        width: 135px;
+        height: 135px
+    }
+    .schools .logo .mei{
+        width: 105px;
+        height: 106px;
+        margin-top: 10px;
+    }
+    .schools .logo .col-xs-12{
+        margin-top: 45px;
+    }
+
+
+    /*publicChain*/
+    .publicChain{
+        background: white;
+        padding-top: 60px;
+        padding-bottom:60px;
+    }
+    .publicChain .pc-title{
+        color: #0011BC;
+        font-size: 40px;
+        font-family: FuturaBT-BoldItalic;
+    }
+    .publicChain .pc{
+        margin-top: 50px;
+        position:relative;
+    }
+    .publicChain .eth{
+        margin-top: 65px;
+    }
+    .publicChain .pc img{
+        width: 70%;
+        height: 70%;
+    }
+
+    /*bottom底部*/
+    .bottom{
+        background: #373737;
+        height: 350px;
+    }
+    .bottom .bot-title{
+        margin-top: 40px;
+        font-family: FuturaBT-BoldItalic;
+        color: white;
+        font-size: 130px;
+    }
+    .bottom .bot-title p{
+        color: #B4B4B4;
+        font-size: 16px;
+        font-family: Helvetica;
+        /*font-weight: lighter;*/
+        margin-top: -30px;
+    }
+    .bottom .svg{
+        margin-top: 10px;
+    }
+    .bottom .svg .col-md-6{
+        padding: 8px;
+    }
+    .bottom .svg .svg1{
+        text-align: right;
+    }
+    .bottom .svg .svg1 img{
+        margin-left: 11px;
+        cursor: pointer;
+    }
+    .bottom .svg .svg2{
+        text-align: left;
+    }
+    .bottom .svg .svg2 img{
+        margin-right: 11px;
+        cursor: pointer;
+    }
 }
 
-.lunbo2 .item,.lunbo2 .card{
-  max-width: 410px !important;
-  /*min-width: 315px !important;*/
-}
-.carousel-control.left {
+/*响应式 当屏幕小于992px时*/
+@media only screen and (max-width: 992px) {
+    .header{
+        background-image: url('../img/bg2.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding-left: 0;
+        padding-right: 0;
+    }
 
-  background-image:none;
-  background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#80000000', endColorstr='#00000000', GradientType=1);
-}
-.carousel-control.right {
-  left: auto;
-  right: 0;
+    /*大小标题*/
+    .title img{
+        margin-top: 80px;
+        background-size: cover;
+        width: 80%;
+        height: 80%;
+    }
+    .title .little-title{
+        color: #0011BC;
+        font-size: 30px;
+        font-family: Helvetica;
+        font-weight: lighter;
+        margin-top: -50px;
+    }
 
-  background-image: none;
-  background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#80000000', GradientType=1);
+    /*订阅表单*/
+    .Subscribe{
+        height: 334px;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .Subscribe label{
+        color: #ADADBD;
+        font-size: 14px;
+        font-family: Helvetica;
+        margin-top: 40px;
+    }
+    .Subscribe label span{
+        color: #0011BC !important;
+    }
+    .Subscribe input{
+        height: 40px;
+        width: 100%;
+        border-radius:4px;
+        outline: none;
+        background: #E5E5EF;
+        border: 0px;
+
+        color:#000000;
+        font-size: 14px;
+        font-family: Helvetica;
+        font-weight: bold;
+        padding-left: 15px;
+    }
+    .Subscribe .sub-button{
+        width: 100%;
+        height: 40px;
+        margin-top: 25px;
+        background:rgba(0,17, 188,1);
+        border: 0px;
+        border-radius:4px;
+
+        color: #FFFFFF;
+        font-size: 14px;
+        font-family: Helvetica;
+        font-weight: bold;
+    }
+    .Subscribe .error{
+        color:red;
+        clear: both;
+        padding-left: -30px;
+        position: absolute;
+    }
+    /*邮件发送成功*/
+    .Subscribe .success img{
+        margin-top: 40px;
+    }
+    .Subscribe .success .thank{
+        color: #0011BC;
+        font-size: 24px;
+        font-family: Helvetica;
+        font-weight: bold;
+        line-height: 50px;
+    }
+    .Subscribe .success .word,.Subscribe .fail .word{
+        color: #3F3F3F;
+        font-size: 14px;
+        font-family: Helvetica;
+        font-weight: bold;
+        margin-left: -20px;
+        margin-right: -20px;
+    }
+    /*邮件发送失败*/
+    .Subscribe .fail .thank{
+        color: #DA3A3A;
+        font-size: 24px;
+        font-family: Helvetica;
+        font-weight: bold;
+        line-height: 50px;
+    }
+    .Subscribe .fail .refresh{
+        width: 200px;
+        height: 45px;
+        background:rgba(0,17, 188,1);
+        border: 0px;
+        border-radius:4px;
+        margin-top: 15px;
+
+        color: #FFFFFF;
+        font-size: 14px;
+        font-family: Helvetica;
+        font-weight: bold;
+    }
+
+    /*Describe描述*/
+    .Describe{
+        padding-top: 100px;
+        float: left;
+        /*margin-bottom: 0px;*/
+        background: linear-gradient(#FEFEFE, #F6F6FE);
+    }
+    .Describe img{
+        width: 60px;
+        height: 56px;
+        cursor: pointer;
+        margin-top: 30px;
+        display: table-cell;
+        text-align: center;
+
+    }
+    .Describe .des-div{
+        /*display: none;*/
+        margin-bottom: 10px;
+    }
+    .Describe,.Describe .col-xs-12,.Describe .col-md-3,.Describe .col-md-12{
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+    .Describe .des-title{
+        color:#050512;
+        font-size: 24px;
+        font-family: Helvetica;
+        font-weight: lighter;
+        margin-top: 20px;
+    }
+    .Describe .line{
+        width: 60px;
+        height: 2px;
+        background: #0011BC;
+    }
+    .Describe .des{
+        color: #91919B;
+        font-size: 15px;
+        font-family: Helvetica;
+        margin-top: 17px;
+    }
+
+    /*partners*/
+    .partners{
+        background: white;
+        padding-top: 32px;
+        padding-bottom: 65px;
+    }
+    .partners .par-title{
+        color: #0011BC;
+        font-size: 40px;
+        font-family: FuturaBT-BoldItalic;
+        line-height: 35px;
+    }
+    .partners .logo img{
+        width: 90%;
+        height: 90%;
+    }
+    .partners .logo .col-xs-12{
+        margin-top: 45px;
+    }
+    .partners,.partners .col-md-10{
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    /*schools*/
+    .schools{
+        background: #F6F6FE;
+        padding-top: 65px;
+        padding-bottom: 65px;
+    }
+    .schools .sch-title{
+        color: #0011BC;
+        font-size: 40px;
+        font-family: FuturaBT-BoldItalic;
+    }
+    .schools .logo{
+        margin-top: 10px;
+    }
+    .schools .logo .mei{
+        width: 60%;
+        height: 60%;
+    }
+    .schools .logo .mas{
+        width: 55%;
+        height: 55%;
+    }
+    .schools .logo .nan{
+        width: 55%;
+        height: 55%;
+    }
+    .schools .logo .zhe{
+        width: 55%;
+        height: 55%;
+    }
+    .schools .logo img{
+        width: 100%;
+        height: 100%;
+    }
+    .schools .logo .col-xs-12{
+        margin-top: 45px;
+    }
+
+    /*publicChain*/
+    .publicChain{
+        background: white;
+        padding-top: 35px;
+        padding-bottom:60px;
+    }
+    .publicChain .pc-title{
+        color: #0011BC;
+        font-size: 40px;
+        font-family: FuturaBT-BoldItalic;
+    }
+    .publicChain .eth{
+        margin-top: 60px;
+    }
+    .publicChain .pc{
+        margin-top: 50px;
+    }
+    .publicChain .pc img{
+        width: 100%;
+        height: 100%;
+    }
+
+    /*bottom底部*/
+    .bottom{
+        background: #373737;
+        height: 400px;
+    }
+    .bottom .bot-title{
+        margin-top: 80px;
+        font-family: FuturaBT-BoldItalic;
+        color: white;
+        font-size: 90px;
+    }
+    .bottom .bot-title p{
+        color: #B4B4B4;
+        font-size: 10px;
+        font-family: Helvetica;
+        /*font-weight: lighter;*/
+        margin-top: -20px;
+    }
+    .bottom .svg{
+        margin-top: 20px;
+    }
+    .bottom .svg .col-md-6{
+        /*padding: 8px;*/
+    }
+    .bottom .svg .svg1{
+        text-align: center;
+    }
+    .bottom .svg .svg1 img{
+        margin-left: 6px;
+        margin-right: 6px;
+        cursor: pointer;
+    }
+    .bottom .svg .svg2{
+        text-align: center;
+        margin-top: 20px;
+    }
+    .bottom .svg .svg2 img{
+        margin-left: 6px;
+        margin-right: 6px;
+        cursor: pointer;
+    }
+}
+
+
+/*响应式 当屏幕小于750px时*/
+@media only screen and (max-width: 750px) {
+    .header {
+        background-image: url('../img/bg2.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        /*background-position: center;*/
+    }
+
+    /*大小标题*/
+    .header .title .little-title{
+        font-size: 12px;
+        margin-top: -10px;
+    }
+}
+
+/*响应式 当屏幕小于750px时*/
+@media only screen and (max-width: 500px) {
+    /*大小标题*/
+    .title .little-title{
+        font-size: 13px;
+    }
 }

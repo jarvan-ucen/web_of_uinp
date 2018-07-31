@@ -1,231 +1,270 @@
-<!doctype html>
-<html lang="zh" class="no-js">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" href="css/nav-reset.css"> <!-- CSS reset -->
-	<link rel="stylesheet" href="css/nav-style.css"> <!-- Gem style -->
-	<link rel="stylesheet" href="css/bootstrap.min.css"> <!-- Gem style -->
-	<link rel="stylesheet" href="css/base.css"> <!-- Gem style -->
-	<script src="js/nav-modernizr.js"></script> <!-- Modernizr -->
-	<script src="js/jquery-3.3.1.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<!--设置favicons-->
-	<link rel="shortcut icon" href="img/icon2.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Uinp</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/base.css">
+    <link rel="stylesheet" type="text/css" href="css/intlTelInput.css">
 
-	<!--响应式nav 点击出现导航条-->
-	<!--<script src="js/nav-main.js"></script> &lt;!&ndash; Gem jQuery &ndash;&gt;-->
-
-	<style>
-		.aa:focus{
-			outline: none !important;
-			border:0px;
-			/*background-color:rgba(0, 0, 0, 0) !important;*/
-		}
-	</style>
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/intlTelInput.js"></script>
+    <script type="text/javascript" src="js/base.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#phone").intlTelInput({
+                utilsScript: "js/utils.js"
+            });
+        })
+    </script>
 </head>
 <body>
-<!--第一个模块 导航条-->
-<header style="background: white">
-	<div id="logo"><img src="img/Logo.svg" alt="Homepage" style="vertical-align: middle;"></div>
-	<div id="cd-hamburger-menu"><a class="cd-img-replace" href="#0">Menu</a></div>
-	<div id="cd-cart-trigger">
-		<div class="flag1" style="vertical-align: middle;" align="center">
-			<span>ENG</span>
-			<span class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span>
-			<img src="img/GB.png">
-		</div>
-		<div class="flag2" style="vertical-align: middle;" align="center">
-			<img src="img/GB.png">
-			<span class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span>
-		</div>
-	</div>
-</header>
 
-<nav id="main-nav">
-	<ul>
-		<!--<li><a href="#0">Home</a></li>-->
-		<!--<li><a href="#0">About</a></li>-->
-		<!--<li><a class="current" href="#0">Services</a></li>-->
-		<!--<li><a href="#0">Gallery</a></li>-->
-		<!--<li><a href="#0">Contact</a></li>-->
-	</ul>
-</nav>
+<!--大小标题-->
+<div class="header col-xs-12">
+    <div class="col-md-8 col-md-offset-2 title" align="center">
+        <img src="img/big-title.png">
+        <p class="little-title">Unitary Protocol for Future Blockchain Network</p>
+    </div>
 
-<!--第二个模块-->
-<div class="col-xs-12 two" style="margin-top: 80px;background-image: url(img/bg_image.jpg);background-repeat: no-repeat;background-position: center">
-	<div class="col-lg-8 col-lg-offset-2" align="center">
-		<p class="title1">
-			<span>UNITARY INTERCHAIN</span></br>
-			<span style="color: #050512">NETWORK PROTOCAL</span>
-		</p>
-		<p class="title2">UINP</p>
-	</div>
-	<div class="col-lg-6 col-lg-offset-3 col-sm-8 col-sm-offset-2 col-xs-12" align="center">
-		<p class="little-title">Unitary Protocal for Future Blockchain Network</p>
-		<div class="col-xs-12">
-			<div class="col-sm-2 col-sm-offset-1 col-xs-2" align="right">
-				<img src="img/user.svg" class="svg">
-			</div>
-			<div class="col-lg-8 col-xs-9 text" align="left">
-				<input class="aa" placeholder="Full Name" type="text" style="border: 0px;background-color:rgba(0, 0, 0, 0);text-align: left;outline:none;color:#050512">
-			</div>
-			<div class="col-sm-8 col-sm-offset-2 col-xs-12 line">
-			</div>
-		</div>
-		<div class="col-xs-12">
-			<div class="col-sm-1 col-sm-offset-2 col-xs-2" align="right">
-				<img src="img/email.svg" class="svg">
-			</div>
-			<div class="col-lg-8 col-xs-9 text" align="left">
-
-				<input class="aa" placeholder="Email" type="text" style="border: 0px;background-color:rgba(0, 0, 0, 0);text-align: left;outline:none;color:#050512">
-			</div>
-			<div class="col-sm-8 col-sm-offset-2 col-xs-12 line">
-			</div>
-		</div>
-		<div class="col-xs-12">
-			<div class="col-sm-1 col-sm-offset-2 col-xs-2" align="right">
-				<img src="img/phone.svg" class="svg">
-			</div>
-			<div class="col-lg-8 col-xs-9 text" align="left">
-
-				<input class="aa" placeholder="Telephone Number" type="text" style="border: 0px;background-color:rgba(0, 0, 0, 0);text-align: left;outline:none;color:#050512">
-			</div>
-			<div class="col-sm-8 col-sm-offset-2 col-xs-12 line">
-			</div>
-		</div>
-		<div class="button col-sm-8 col-sm-offset-2 col-xs-12" style="cursor: pointer">SUBSCRIBE</div>
-	</div>
+    <!--订阅表单-->
+    <div class="col-md-10 col-md-offset-1 col-xs-12 Subscribe">
+        <div class="form">
+            <div class="col-md-3">
+                <div class="form-group">
+                    <div class="col-xs-12">
+                        <label>
+                            Full Name<span> *</span>
+                        </label>
+                    </div>
+                    <div class="col-xs-12">
+                        <input type="text" class="fullName" id="Fullname" autocomplete="off">
+                    </div>
+                    <div class="col-xs-12">
+                        <span class="error fullNameError" style=""></span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="form-group">
+                    <div class="col-xs-12">
+                        <label>
+                            Email<span> *</span>
+                        </label>
+                    </div>
+                    <div class="col-xs-12">
+                        <input type="text" class="email" id="Email" autocomplete="off">
+                    </div>
+                    <div class="col-xs-12">
+                        <span class="error emailError"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="form-group">
+                    <div class="col-xs-12">
+                        <label>
+                            Phone Number
+                        </label>
+                    </div>
+                    <div class="col-xs-12">
+                        <input id="phone" type="tel" class="phoneNumber">
+                    </div>
+                    <div class="col-xs-12">
+                        <span class="error phoneNumberError"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="form-group col-xs-12">
+                    <button type="button" class="sub-button" id="subscribeBtn">SUBSCRIBE</button>
+                </div>
+            </div>
+        </div>
+        <div class="success" align="center" style="display: none">
+            <img src="img/hand-shake.svg" >
+            <div class="col-xs-12 thank">Thank You!</div>
+            <div class="word col-md-6 col-md-offset-3">Your subscription has been confirmed.You've been added to our list and will hear from us soon.</div>
+        </div>
+        <div class="fail" align="center" style="display: none">
+            <div class="col-xs-12 thank">Something went wrong!</div>
+            <div class="word col-md-6 col-md-offset-3">We couldn't confirm your subscription. please refresh the page and try again.</div>
+            <div class="col-xs-12"><button type="button" class="refresh">REFRESH</button></div>
+        </div>
+    </div>
 </div>
 
-<!--第三个模块-->
-<div class="col-md-12 three" align="center" style="clear: both">
-	<div class="col-md-12 title1">
-		<span class="why">Why</span> use UINP to Cross Chains
-	</div>
-	<div class="line1">
-	</div>
-	<div class="col-md-12 lunbo1">
-		<div class="col-md-3">
-			<div class="card">
-				<div class="col-xs-12 svg"><img src="img/Compatibility.svg"></div>
-				<p class="title">Compatibility</p>
-				<div class="line">
-				</div>
-				<span class="des">
-					UINP-compatible for every blockchain possible structure(i.e.DAG and future structures) by the tunnel built beneath thw Internet transport-layer infrastructure.
-				</span>
-			</div>
-		</div>
-		<div class="col-md-3">
-			<div class="card">
-				<div class="col-xs-12 svg"><img src="img/Connect.svg"></div>
-				<p class="title">Simple-connect</p>
-				<div class="line">
-				</div>
-				<span class="des">
-					Every blockchain network can connect to the Unitary Interchain Network easily,through old nodes or new nodes,even a single node.
-				</span>
-			</div>
-		</div>
-		<div class="col-md-3">
-
-			<div class="card">
-				<div class="col-xs-12 svg"><img src="img/Speed.svg"></div>
-				<p class="title">Speed-up</p>
-				<div class="line">
-				</div>
-				<span class="des">
-					The speed of Unitary Interchain Network is faster than any traditional cross-chain network as it is a transport-layer protocol.
-				</span>
-			</div>
-		</div>
-		<div class="col-md-3">
-			<div class="card">
-				<div class="col-xs-12 svg"><img src="img/Transfer.svg"></div>
-				<p class="title">Transferability</p>
-				<div class="line">
-				</div>
-				<span class="des">
-					Dapps can be seamless migrated easily to another chain if the chain support UINP,which means in the UINP age,Dapps no need to worry about the chain infrastructure circumstance.
-				</span>
-			</div>
-		</div>
-	</div>
-
-	<div class="col-xs-12 lunbo2">
-		<div id="myCarousel" class="carousel slide" style="max-width: 350px">
-			<!-- 轮播（Carousel）项目 -->
-			<div class="carousel-inner">
-				<div class="item active">
-					<div class="card">
-						<div class="col-xs-12 svg"><img src="img/Compatibility.svg"></div>
-						<p class="title">Compatibility</p>
-						<div class="line">
-						</div>
-					<span class="des">
-						UINP-compatible for every blockchain possible structure(i.e.DAG and future structures) by the tunnel built beneath thw Internet transport-layer infrastructure.
-					</span>
-					</div>
-				</div>
-				<div class="item">
-					<div class="card">
-						<div class="col-xs-12 svg"><img src="img/Connect.svg"></div>
-						<p class="title">Simple-connect</p>
-						<div class="line">
-						</div>
-						<span class="des">
-							Every blockchain network can connect to the Unitary Interchain Network easily,through old nodes or new nodes,even a single node.
-						</span>
-					</div>
-				</div>
-				<div class="item">
-					<div class="card">
-						<div class="col-xs-12 svg"><img src="img/Speed.svg"></div>
-						<p class="title">Speed-up</p>
-						<div class="line">
-						</div>
-					<span class="des">
-						The speed of Unitary Interchain Network is faster than any traditional cross-chain network as it is a transport-layer protocol.
-					</span>
-					</div>
-				</div>
-				<div class="item">
-					<div class="card">
-						<div class="col-xs-12 svg"><img src="img/Transfer.svg"></div>
-						<p class="title">Transferability</p>
-						<div class="line">
-						</div>
-					<span class="des">
-						Dapps can be seamless migrated easily to another chain if the chain support UINP,which means in the UINP age,Dapps no need to worry about the chain infrastructure circumstance.
-					</span>
-					</div>
-				</div>
-			</div>
-
-			<!-- 轮播（Carousel）导航 -->
-			<a class="carousel-control left" href="#myCarousel" data-slide="prev" style="margin-left: -15px">
-				<span _ngcontent-c3="" aria-hidden="true" class="glyphicon glyphicon-chevron-left"></span></a>
-			<a class="carousel-control right" href="#myCarousel" data-slide="next" style="margin-right: -15px">
-				<span _ngcontent-c3="" aria-hidden="true" class="glyphicon glyphicon-chevron-right"></span>
-			</a>
-
-			<!-- 轮播（Carousel）指标 -->
-			<ol class="carousel-indicators" style="margin-top: 20px;margin-bottom: 100px">
-				<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-				<li data-target="#myCarousel" data-slide-to="1"></li>
-				<li data-target="#myCarousel" data-slide-to="2"></li>
-				<li data-target="#myCarousel" data-slide-to="3"></li>
-			</ol>
-		</div>
-	</div>
+<!--Describe描述-->
+<div class="col-xs-12 Describe">
+    <div class="col-md-10 col-md-offset-1 col-xs-12" align="center">
+        <div class="col-md-3">
+            <div class="col-xs-12">
+                <img src="img/drones.svg" id="Compatibility">
+            </div>
+            <div class="col-xs-12 des-div des-Compatibility" id="des-Compatibility">
+                <p class="des-title">Compatibility</p>
+                <p class="line">
+                </p>
+                <p class="des col-md-12 col-xs-10 col-xs-offset-1">
+                    UINP-compatible for every blockchain possible structure(i.e.DAG and future structures) by the tunnel built beneath thw Internet transport-layer infrastructure.
+                </p>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="col-xs-12">
+                <img src="img/adaptability-cell.svg" id="Simple-connect">
+            </div>
+            <div class="col-xs-12 des-div des-Simple-connect" id="des-Simple-connect">
+                <p class="des-title">Simple-connect</p>
+                <p class="line">
+                </p>
+                <p class="des col-md-12 col-xs-10 col-xs-offset-1">
+                    Every blockchain network can connect to the Unitary Interchain Network easily,through old nodes or new nodes,even a single node.
+                </p>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="col-xs-12">
+                <img src="img/speed-meter-1.svg" id="Speed-up">
+            </div>
+            <div class="col-xs-12 des-div des-Speed-up" id="des-Speed-up">
+                <p class="des-title">Speed-up</p>
+                <p class="line">
+                </p>
+                <p class="des col-xs-10 col-xs-offset-1">
+                    The speed of Unitary Interchain Network is faster than any traditional cross-chain network as it is a transport-layer protocol.
+                </p>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="col-xs-12">
+                <img src="img/returning-visitor.svg" id="Transferability">
+            </div>
+            <div class="col-xs-12 des-div des-Transferability" id="des-Transferability">
+                <p class="des-title">Transferability</p>
+                <p class="line">
+                </p>
+                <p class="des col-xs-10 col-xs-offset-1">
+                    Dapps can be seamless migrated easily to another chain if the chain support UINP,which means in the UINP age,Dapps no need to worry about the chain infrastructure circumstance.
+                </p>
+            </div>
+        </div>
+    </div>
 </div>
 
-<!--第四个模块 底部-->
-<div class="col-xs-12" align="center" style="height: 80px;background: #050412;line-height: 80px">
-	<img src="img/Logo.svg" style="">
+<!--partners-->
+<div class="col-xs-12 partners">
+    <div class="col-xs-12 par-title" align="center">
+        PARTNERS & ADVISORS
+    </div>
+    <div class="col-md-10 col-md-offset-1 col-xs-12 logo">
+        <div class="col-xs-12">
+            <div class="col-xs-6" style="text-align: left">
+                <img src="img/partners/ld.png">
+            </div>
+            <div class="col-xs-6" style="text-align: right">
+                <img src="img/partners/istart.png">
+            </div>
+        </div>
+        <div class="col-xs-12">
+            <div class="col-xs-6" style="text-align: left">
+                <img src="img/partners/genesis.png">
+            </div>
+            <div class="col-xs-6" style="text-align: right">
+                <img src="img/partners/bitrise.png">
+            </div>
+        </div>
+        <div class="col-xs-12">
+            <div class="col-xs-6" style="text-align: left">
+                <img src="img/partners/bixin.png">
+            </div>
+            <div class="col-xs-6" style="text-align: right">
+                <img src="img/partners/consen.png">
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--schools-->
+<div class="col-xs-12 schools" align="center">
+    <div class="col-xs-12 sch-title">
+        SCHOOLS
+    </div>
+    <div class="col-md-10 col-md-offset-1 col-xs-12 logo">
+        <div class="col-xs-12">
+            <div class="col-xs-6">
+                <img src="img/schools/waterloo.png">
+            </div>
+            <div class="col-xs-6">
+                <img src="img/schools/imperial.png">
+            </div>
+        </div>
+        <div class="col-xs-12">
+            <div class="col-xs-6">
+                <img src="img/schools/nanjing.png" class="nan">
+            </div>
+            <div class="col-xs-6">
+                <img src="img/schools/melbourne.png" class="mei">
+            </div>
+        </div>
+        <div class="col-xs-12">
+            <div class="col-xs-6">
+                <img src="img/schools/zhejiang.png" class="zhe">
+            </div>
+            <div class="col-xs-6">
+                <img src="img/schools/massachusetts.png" class="mas">
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--publicChain-->
+<div class="col-xs-12 publicChain" align="center">
+    <div class="col-xs-12 pc-title">
+        PUBLIC CHAIN
+    </div>
+    <div class="col-xs-12 eth">
+        <img src="img/PublicChain/ETH.svg">
+    </div>
+    <div class="col-md-10 col-md-offset-1 col-xs-12 pc">
+        <!--<div class="col-xs-12">-->
+        <div class="col-xs-4" style="text-align: left">
+            <img src="img/PublicChain/ADA.png">
+        </div>
+        <div class="col-xs-4" style="text-align: center;margin-top: 3%">
+            <img src="img/PublicChain/NEO.png">
+        </div>
+        <div class="col-xs-4" style="text-align: right">
+            <img src="img/PublicChain/EOS.png">
+        </div>
+        <!--</div>-->
+    </div>
+</div>
+
+<!--bottom底部-->
+<div class="col-xs-12 bottom" align="center">
+    <div class="col-xs-12 bot-title">
+        UINP
+        <p>Unitary Protocol for Future Blockchain Network</p>
+    </div>
+    <div class="col-xs-12 svg">
+        <div class="col-md-6 svg1">
+            <img src="img/SocialIcons/Facebook_White.svg" onclick="window.open('https://www.facebook.com/UINP-Global-Community-1967473978')">
+            <img src="img/SocialIcons/Twitter_White.svg" onclick="window.open('https://twitt46867/er.com/?lang=en')">
+            <img src="img/SocialIcons/Telegram_White.svg">
+            <img src="img/SocialIcons/T.svg">
+            <img src="img/SocialIcons/Medium_White.svg" onclick="window.open('https://medium.com/@uinpfoundation')">
+        </div>
+        <div class="col-md-6 svg2">
+            <img src="img/SocialIcons/LinkedIN_White.svg">
+            <img src="img/SocialIcons/M.svg" onclick="window.open('https://www.reddit.com/user/UINP')">
+            <img src="img/SocialIcons/Youtube_White.svg">
+            <img src="img/SocialIcons/Instagram_White.svg">
+            <img src="img/SocialIcons/wechat_F.svg">
+        </div>
+    </div>
 </div>
 </body>
 </html>
